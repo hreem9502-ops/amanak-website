@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     أمانك - Safe Guard | كاميرا المراقبة (camera.html)
+     ============================================================ -->
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="كاميرا المراقبة من أمانك: راقب منزلك وتحدث مع أطفالك عن بعد عبر بث مباشر مشفّر، مع التسجيل واللقطات وإعدادات كاملة للكاميرا.">
+  <title>كاميرا المراقبة | أمانك Safe Guard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="loader" id="loader">
+    <div class="loader__shield">
+      <svg viewBox="0 0 24 24" width="42" height="42" aria-hidden="true">
+        <path fill="#10B981" d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+        <path fill="#ffffff" d="m10.6 14.8-2.8-2.8 1.1-1.1 1.7 1.7 4.1-4.1 1.1 1.1-5.2 5.2z"/>
+      </svg>
+    </div>
+    <p class="loader__text">جارٍ تحضير أمانك...</p>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="العودة إلى أعلى الصفحة">&#8593;</button>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="أمانك الصفحة الرئيسية">
+        <img src="images/logo.svg" alt="شعار أمانك" class="brand__logo" width="44" height="44">
+        <span class="brand__text"><strong>أمانك</strong><small>Safe Guard</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="القائمة الرئيسية">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">الرئيسية</a></li>
+          <li><a href="app-safety.html" class="nav__link">التطبيقات الآمنة</a></li>
+          <li><a href="child-monitor.html" class="nav__link">حماية طفلك</a></li>
+          <li><a href="camera.html" class="nav__link is-active">كاميرا المراقبة</a></li>
+          <li><a href="index.html#contact" class="nav__link">تواصل معنا</a></li>
+        </ul>
+        <a href="index.html#contact" class="btn btn--primary btn--sm nav__cta">ابدأ الحماية الآن</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="فتح القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container reveal">
+        <nav class="breadcrumb" aria-label="مسار التنقل">
+          <a href="index.html">الرئيسية</a><span>/</span><span>كاميرا المراقبة</span>
+        </nav>
+        <h1>كاميرا المراقبة</h1>
+        <p>راقب منزلك وتحدث مع أطفالك عن بعد — بث مباشر مشفّر بالكامل من الطرف إلى الطرف.</p>
+      </div>
+    </section>
+
+    <!-- شرح الخدمة -->
+    <section class="section" id="overview">
+      <div class="container grid grid--2 grid--align">
+        <div class="reveal">
+          <span class="eyebrow">الخدمة بالتفصيل</span>
+          <h2 class="section__title">منزلك أمامك أينما كنت</h2>
+          <p>
+            تفتح خدمة <strong>كاميرا المراقبة</strong> بثاً مباشراً من كاميرات منزلك داخل تطبيق أمانك نفسه،
+            دون تطبيقات منفصلة ولا حسابات متعددة. تشاهد، تسمع، وتتحدث مع أطفالك في الاتجاهين —
+            وكل ذلك بتشفير كامل من الطرف إلى الطرف.
+          </p>
+          <p>
+            وإذا حدث شيء يستدعي انتباهك، يسجّل أمانك لقطة تلقائية ويرسلها لك مع التنبيه، حتى تتحقق بعينك
+            قبل أن تتخذ أي قرار.
+          </p>
+          <ul class="check-list">
+            <li>بث مباشر بجودة قابلة للتعديل حسب سرعة الإنترنت.</li>
+            <li>اتصال صوتي في الاتجاهين للتحدث مع الأطفال فوراً.</li>
+            <li>رؤية ليلية للمراقبة في الإضاءة المنخفضة.</li>
+            <li>تسجيل يدوي ولقطات فورية تُحفظ في مساحة العائلة.</li>
+            <li>لقطة تلقائية مع التنبيه عند رصد حركة غير متوقعة.</li>
+            <li>إدارة كل الكاميرات من قائمة واحدة بحالة كل كاميرا.</li>
+          </ul>
+          <p class="note-line">المواصفات المذكورة توضيحية لعرض شكل الخدمة، وتُحدَّد نهائياً بحسب موديل الكاميرا لديك.</p>
+        </div>
+
+        <div class="service-visual reveal">
+          <div class="card card--feature">
+            <div class="card__icon card__icon--amber">📷</div>
+            <h3>حالة الكاميرات</h3>
+            <ul class="card__list">
+              <li>غرفة المعيشة — متصلة (بث مباشر)</li>
+              <li>غرفة الأطفال — متصلة</li>
+              <li>المدخل — متصلة</li>
+              <li>مؤشر الحالة: أخضر لكل الكاميرات</li>
+              <li>آخر تسجيل: قبل 12 دقيقة</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- البث المباشر (الصورة الحقيقية) -->
+    <section class="section section--soft" id="live">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">البث المباشر</span>
+          <h2 class="section__title">واجهة واحدة للشاشة والتحكم والكاميرات</h2>
+          <p class="section__lead">شاشة العرض في الأعلى، أزرار التحكم بالعربية، وقائمة الكاميرات الجانبية بحالة كل واحدة.</p>
+        </div>
+
+        <div class="media-frame media-frame--wide media-frame--dark reveal">
+          <img src="images/camera-real.png" alt="واجهة كاميرا المراقبة في تطبيق أمانك — شاشة بث مباشر وأزرار تحكم عربية وقائمة الكاميرات" class="reveal" loading="lazy">
+          <div class="media-frame__caption">
+            <span class="chip">لقطة حقيقية من التطبيق</span>
+            <span>بث مباشر + تسجيل · لقطة · صوت · اتصال + قائمة الكاميرات</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- مميزات الكاميرا الكاملة -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">المميزات الكاملة</span>
+          <h2 class="section__title">كل ما تحتاجه في كاميرا مراقبة منزلية</h2>
+        </div>
+
+        <div class="grid grid--4">
+          <article class="card card--feature reveal">
+            <div class="card__icon card__icon--blue">🎥</div>
+            <h3>بث مباشر عالي الجودة</h3>
+            <p>جودة قابلة للتعديل تلقائياً حسب سرعة الشبكة لتفادي التقطيع.</p>
+          </article>
+          <article class="card card--feature reveal">
+            <div class="card__icon card__icon--green">🎙️</div>
+            <h3>صوت في الاتجاهين</h3>
+            <p>تسمع ما يجري وتتحدث مع أطفالك بنقرة واحدة كأنك في المنزل.</p>
+          </article>
+          <article class="card card--feature reveal">
+            <div class="card__icon card__icon--purple">🌙</div>
+            <h3>رؤية ليلية</h3>
+            <p>صورة واضحة في الإضاءة المنخفضة لمتابعة نوم الأطفال ليلاً.</p>
+          </article>
+          <article class="card card--feature reveal">
+            <div class="card__icon card__icon--amber">🔔</div>
+            <h3>كشف الحركة</h3>
+            <p>تنبيه فوري مع لقطة تلقائية عند رصد حركة في نطاق محدد.</p>
+          </article>
+          <article class="card card--feature reveal">
+            <div class="card__icon card__icon--blue">⏺️</div>
+            <h3>تسجيل ولقطات</h3>
+            <p>تسجيل يدوي ولقطات فورية تُحفظ في مساحة العائلة المشتركة.</p>
+          </article>
+          <article class="card card--feature reveal">
+            <div class="card__icon card__icon--green">🗂️</div>
+            <h3>كل الكاميرات معاً</h3>
+            <p>قائمة جانبية بحالة كل كاميرا (متصلة / غير متصلة) وبث مباشر لكل غرفة.</p>
+          </article>
+          <article class="card card--feature reveal">
+            <div class="card__icon card__icon--purple">🔐</div>
+            <h3>تشفير كامل</h3>
+            <p>البث والتسجيلات مشفّرة من الطرف إلى الطرف ولا تُخزَّن عند أي طرف ثالث.</p>
+          </article>
+          <article class="card card--feature reveal">
+            <div class="card__icon card__icon--amber">👨‍👩‍👧</div>
+            <h3>صلاحيات متعددة</h3>
+            <p>حدّد من يمكنه المشاهدة ومن يمكنه التحكم، بصلاحيات مستقلة لكل فرد.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- إعدادات الكاميرا -->
+    <section class="section section--soft" id="settings">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">إعدادات الكاميرا</span>
+          <h2 class="section__title">شرح تقني مبسّط لكل إعداد</h2>
+          <p class="section__lead">كل إعداد مكتوب بلغة واضحة حتى تضبط الكاميرا دون خبرة تقنية.</p>
+        </div>
+
+        <div class="table-wrap reveal">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>الإعداد</th>
+                <th>القيم المتاحة</th>
+                <th>الوظيفة</th>
+                <th>الوصف الفني</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>جودة البث</td>
+                <td><span class="pill pill--safe">عالي / متوسط / موفّر</span></td>
+                <td>ضبط وضوح الصورة</td>
+                <td>عالي = 1080p للواي فاي القوي، موفّر = 480p لتفادي استهلاك البيانات.</td>
+              </tr>
+              <tr>
+                <td>كشف الحركة</td>
+                <td><span class="pill pill--safe">مفعّل / معطّل</span></td>
+                <td>تنبيه عند الحركة</td>
+                <td>تحديد منطقة الحساسية على الشاشة، وضبط مستوى الحساسية لتقليل التنبيهات الكاذبة.</td>
+              </tr>
+              <tr>
+                <td>الرؤية الليلية</td>
+                <td><span class="pill pill--safe">تلقائي / يدوي / معطّل</span></td>
+                <td>الرؤية في الظلام</td>
+                <td>تلقائي = تشغيل تلقائي عند انخفاض الإضاءة دون إزعاج للنائمين.</td>
+              </tr>
+              <tr>
+                <td>الصوت في الاتجاهين</td>
+                <td><span class="pill pill--safe">مفعّل / كتم</span></td>
+                <td>التحدث والاستماع</td>
+                <td>تفعيل الميكروفون والسماعة للجهتين، مع إمكانية الكتم أثناء المراقبة فقط.</td>
+              </tr>
+              <tr>
+                <td>وضع الخصوصية</td>
+                <td><span class="pill pill--safe">مفعّل / معطّل</span></td>
+                <td>إيقاف البث مؤقتاً</td>
+                <td>يُغلق العدسة والصوت كلياً عند الحاجة لخصوصية داخل الغرفة.</td>
+              </tr>
+              <tr>
+                <td>مدة حفظ التسجيلات</td>
+                <td><span class="pill pill--safe">7 / 30 / 90 يوماً</span></td>
+                <td>مدة الاحتفاظ</td>
+                <td>تُحذف التسجيلات تلقائياً بعد المدة المحددة لتقليل حجم التخزين.</td>
+              </tr>
+              <tr>
+                <td>صلاحيات المشاهدة</td>
+                <td><span class="pill pill--safe">ولي أمر / مشرف / مشاهد</span></td>
+                <td>من يرى ماذا</td>
+                <td>ولي الأمر يتحكم، المشرف يشاهد ويتحدث، المشاهد يشاهد فقط.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-center note-line">القيم أعلاه إعدادات توضيحية لشكل اللوحة، وقد تختلف حسب موديل الكاميرا.</p>
+      </div>
+    </section>
+
+    <!-- الأسئلة الشائعة -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">الأسئلة الشائعة</span>
+          <h2 class="section__title">أسئلة شائعة عن كاميرا المراقبة</h2>
+        </div>
+
+        <div class="faq reveal">
+          <details>
+            <summary>هل تحتاج كاميرا أمانك إلى أجهزة خاصة؟</summary>
+            <p>لا، الخدمة تعمل مع كاميرات المراقبة المنزلية المعروفة بعد ربطها بالحساب، وتظهر داخل التطبيق مباشرة.</p>
+          </details>
+          <details>
+            <summary>هل يمكن لطفلي أن يسمعني؟</summary>
+            <p>نعم، عند تفعيل الصوت في الاتجاهين يتحدث الطرفان مباشرة، وهذا هو الهدف: طمأنة الطفل لا مراقبته فقط.</p>
+          </details>
+          <details>
+            <summary>هل التسجيلات محفوظة عند طرف ثالث؟</summary>
+            <p>لا، التسجيلات مشفّرة وتُخزَّن في مساحة العائلة، وتُحذف تلقائياً بعد المدة المحددة في الإعدادات.</p>
+          </details>
+          <details>
+            <summary>ماذا يحدث إذا انقطع الإنترنت في المنزل؟</summary>
+            <p>تظهر الكاميرا بحالة «غير متصلة» في القائمة، ويصلك تنبيه بانقطاع البث لتتحقق قبل أن تفترض الأسوأ.</p>
+          </details>
+          <details>
+            <summary>هل يمكن مشاركة المشاهدة مع فرد آخر من العائلة؟</summary>
+            <p>نعم، يمكن منح صلاحية «مشرف» أو «مشاهد» لأي فرد آخر، وتُحدَّد بدقة ما يستطيع فعله.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <div>
+          <h2>أضف كاميرات منزلك إلى أمانك</h2>
+          <p>تجربة مجانية 14 يوماً، وربط الكاميرات متاح في الباقة العائلية.</p>
+        </div>
+        <a href="index.html#contact" class="btn btn--primary btn--lg">ابدأ الحماية الآن</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <a href="index.html" class="brand brand--footer">
+          <img src="images/logo.svg" alt="شعار أمانك" width="40" height="40">
+          <span class="brand__text"><strong>أمانك</strong><small>Safe Guard</small></span>
+        </a>
+        <p class="footer__about">
+          تطبيق متكامل لحماية أفراد العائلة، يجمع بين مراقبة سلامة الأطفال الرقمية،
+          كاميرات مراقبة حية، وخطوط ساخنة سرية للإبلاغ عن الابتزاز.
+        </p>
+        <div class="social">
+          <a href="#" aria-label="تويتر">𝕏</a>
+          <a href="#" aria-label="إنستغرام">📷</a>
+          <a href="#" aria-label="واتساب">💬</a>
+          <a href="#" aria-label="لينكدإن">in</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="app-safety.html">التطبيقات الآمنة</a></li>
+          <li><a href="child-monitor.html">حماية طفلك</a></li>
+          <li><a href="camera.html">كاميرا المراقبة</a></li>
+          <li><a href="index.html#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>في هذه الصفحة</h4>
+        <ul>
+          <li><a href="#live">البث المباشر</a></li>
+          <li><a href="#features">المميزات الكاملة</a></li>
+          <li><a href="#settings">إعدادات الكاميرا</a></li>
+          <li><a href="#faq">الأسئلة الشائعة</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>معلومات التواصل</h4>
+        <ul class="footer__contact">
+          <li>📞 <a href="tel:+966920001234" dir="ltr">+966 92 000 1234</a></li>
+          <li>✉️ <a href="mailto:info@amanak.sa">info@amanak.sa</a></li>
+          <li>📍 الرياض، المملكة العربية السعودية</li>
+          <li>🕐 الدعم الفني: على مدار الساعة</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© <span id="year">2026</span> أمانك Safe Guard — جميع الحقوق محفوظة.</p>
+        <p>سياسة الخصوصية · الشروط والأحكام</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

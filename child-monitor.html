@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     أمانك - Safe Guard | حماية طفلك (child-monitor.html)
+     ============================================================ -->
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="حماية طفلك من أمانك: راقب نشاط جهاز طفلك واحصل على تنبيهات فورية — ستة أنواع من التنبيهات، لوحة أهل واضحة، وتقارير دورية.">
+  <title>حماية طفلك | أمانك Safe Guard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="loader" id="loader">
+    <div class="loader__shield">
+      <svg viewBox="0 0 24 24" width="42" height="42" aria-hidden="true">
+        <path fill="#10B981" d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+        <path fill="#ffffff" d="m10.6 14.8-2.8-2.8 1.1-1.1 1.7 1.7 4.1-4.1 1.1 1.1-5.2 5.2z"/>
+      </svg>
+    </div>
+    <p class="loader__text">جارٍ تحضير أمانك...</p>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="العودة إلى أعلى الصفحة">&#8593;</button>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="أمانك الصفحة الرئيسية">
+        <img src="images/logo.svg" alt="شعار أمانك" class="brand__logo" width="44" height="44">
+        <span class="brand__text"><strong>أمانك</strong><small>Safe Guard</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="القائمة الرئيسية">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">الرئيسية</a></li>
+          <li><a href="app-safety.html" class="nav__link">التطبيقات الآمنة</a></li>
+          <li><a href="child-monitor.html" class="nav__link is-active">حماية طفلك</a></li>
+          <li><a href="camera.html" class="nav__link">كاميرا المراقبة</a></li>
+          <li><a href="index.html#contact" class="nav__link">تواصل معنا</a></li>
+        </ul>
+        <a href="index.html#contact" class="btn btn--primary btn--sm nav__cta">ابدأ الحماية الآن</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="فتح القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container reveal">
+        <nav class="breadcrumb" aria-label="مسار التنقل">
+          <a href="index.html">الرئيسية</a><span>/</span><span>حماية طفلك</span>
+        </nav>
+        <h1>حماية طفلك</h1>
+        <p>راقب نشاط جهاز طفلك واحصل على تنبيهات فورية — بوضوح كامل وشفافية داخل الأسرة.</p>
+      </div>
+    </section>
+
+    <!-- شرح تفصيلي -->
+    <section class="section" id="overview">
+      <div class="container grid grid--2 grid--align">
+        <div class="reveal">
+          <span class="eyebrow">الخدمة بالتفصيل</span>
+          <h2 class="section__title">أنت لا تجسّس، أنت تطمئن</h2>
+          <p>
+            خدمة <strong>حماية طفلك</strong> لا تعطيك سجلاً غامضاً من الأرقام، بل تخبرك بما يهم فعلاً:
+            هل وصل الطفل إلى المدرسة؟ هل استخدم الجهاز وقتاً أطول من المعتاد؟ هل ثبّت تطبيقاً جديداً؟
+            هل وصلته رسالة من شخص غريب؟ وهل ضغط زر الطوارئ؟
+          </p>
+          <p>
+            وكل تنبيه يصلك <strong>بلغة واضحة</strong> مع سبب التنبيه وما الذي يُنصح بفعله، لتقرر أنت خطوتك التالية.
+            ويمكنك ضبط حجم التنبيهات لكل طفل على حدة حتى لا تتحول الإشعارات إلى ضجيج.
+          </p>
+          <ul class="check-list">
+            <li>مراقبة الاستخدام اليومي والوقت الفعلي على الجهاز.</li>
+            <li>قراءة أنماط النشاط (لا محتوى الرسائل الخاصة) باحترام للخصوصية.</li>
+            <li>تنبيه عند تثبيت تطبيق جديد أو حذفه.</li>
+            <li>مناطق آمنة (Geofence) وتنبيه عند الدخول أو الخروج.</li>
+            <li>زر طوارئ على جهاز الطفل يصل إليك مباشرة.</li>
+            <li>تقارير يومية وأسبوعية قابلة للتصدير.</li>
+          </ul>
+          <p class="note-line">القيم والأمثلة في هذه الصفحة توضيحية لشكل الخدمة — عدّلها لتناسب سياستك الفعلية.</p>
+        </div>
+
+        <div class="service-visual reveal">
+          <div class="card card--feature">
+            <div class="card__icon card__icon--green">🧒</div>
+            <h3>ملخص اليوم — سارة</h3>
+            <ul class="card__list">
+              <li>الموقع الحالي: المدرسة</li>
+              <li>المنطقة الآمنة: نشِطة</li>
+              <li>وقت الاستخدام اليوم: 2 ساعة 10 دقائق</li>
+              <li>تطبيقات جديدة: لا يوجد</li>
+              <li>تنبيهات اليوم: 1 (وصول المدرسة)</li>
+              <li>آخر تحديث: قبل دقيقة</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- أنواع التنبيهات الستة -->
+    <section class="section section--soft" id="alerts">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">أنواع التنبيهات</span>
+          <h2 class="section__title">ستة أنواع من التنبيهات الذكية</h2>
+          <p class="section__lead">كل نوع له درجة أهمية مستقلة، وتستطيع ضبط كل واحد على حدة لكل طفل.</p>
+        </div>
+
+        <div class="alert-grid">
+          <article class="alert-type reveal">
+            <div class="alert-type__icon">📍</div>
+            <h3>1. تنبيه الموقع</h3>
+            <p>وصول أو مغادرة منطقة آمنة (المدرسة، المنزل، بيت الجد)، أو خروج غير متوقع عن المسار المعتاد.</p>
+          </article>
+          <article class="alert-type reveal">
+            <div class="alert-type__icon">⏱️</div>
+            <h3>2. تنبيه وقت الاستخدام</h3>
+            <p>تجاوز الحد اليومي المحدد، أو استخدام الجهاز في وقت محظور (بعد النوم، أو خلال وقت الدراسة).</p>
+          </article>
+          <article class="alert-type reveal">
+            <div class="alert-type__icon">⚠️</div>
+            <h3>3. تنبيه المحتوى</h3>
+            <p>محاولة الوصول إلى محتوى غير مناسب للعمر، أو ظهور مواد عنيفة أو غير لائقة في التصفح.</p>
+          </article>
+          <article class="alert-type reveal">
+            <div class="alert-type__icon">💬</div>
+            <h3>4. تنبيه الاتصال</h3>
+            <p>تواصل من رقم أو حساب غير معروف، أو محاولة محادثة متكررة من شخص خارج دائرة العائلة.</p>
+          </article>
+          <article class="alert-type reveal">
+            <div class="alert-type__icon">📲</div>
+            <h3>5. تنبيه تطبيق جديد</h3>
+            <p>تثبيت تطبيق جديد على الجهاز، مع تصنيفه فوراً (آمن / خطر) وسبب التصنيف.</p>
+          </article>
+          <article class="alert-type reveal">
+            <div class="alert-type__icon">🆘</div>
+            <h3>6. تنبيه الطوارئ</h3>
+            <p>ضغط الطفل زر الاستغاثة، أو عدم استجابة الجهاز للحركة لفترة طويلة. يصل التنبيه بأعلى أولوية.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- لوحة الأهل -->
+    <section class="section" id="parent-panel">
+      <div class="container grid grid--2 grid--align">
+        <div class="media-frame reveal">
+          <img src="images/dashboard-real.png" alt="لوحة الأهل في تطبيق أمانك — بطاقات أفراد العائلة مع حالة كل فرد" class="reveal" loading="lazy">
+          <div class="media-frame__caption">
+            <span class="chip">لقطة من التطبيق</span>
+            <span>لوحة الأهل: كل أفراد العائلة في شاشة واحدة</span>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <span class="eyebrow">لوحة الأهل</span>
+          <h2 class="section__title">ماذا يرى ولي الأمر بالضبط؟</h2>
+          <p>لا نعرض لك بيانات تقنية خام، بل ملخصاً منظماً لكل طفل يجيب على أسئلتك اليومية في ثوانٍ.</p>
+
+          <ul class="check-list check-list--boxed">
+            <li><strong>بطاقة الطفل:</strong> الاسم، الحالة (آمن / يحتاج انتباه)، وآخر تحديث.</li>
+            <li><strong>الموقع الحالي:</strong> المكان بلغة مفهومة («في المدرسة») لا بإحداثيات.</li>
+            <li><strong>حالة المنطقة الآمنة:</strong> نشِطة / مخترقة، مع وقت الدخول أو الخروج.</li>
+            <li><strong>ملخص النشاط:</strong> إجمالي وقت الاستخدام وأكثر التطبيقات استخداماً.</li>
+            <li><strong>سجل التنبيهات:</strong> كل تنبيه مع السبب والوقت والإجراء المقترح.</li>
+            <li><strong>التقارير:</strong> ملخص يومي وأسبوعي قابل للتصدير أو المشاركة مع ولي الأمر الآخر.</li>
+            <li><strong>الخصوصية:</strong> صلاحيات متعددة (ولي أمر / مشرف / مشاهد) لضبط من يرى ماذا.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- قصص حقيقية -->
+    <section class="section section--soft" id="stories">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">قصص حقيقية</span>
+          <h2 class="section__title">ثلاث حالات وصل فيها التنبيه في الوقت المناسب</h2>
+          <p class="section__lead">سيناريوهات نموذجية توضّح كيف يبدو استخدام الخدمة في الواقع اليومي.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card card--feature reveal">
+            <div class="card__icon card__icon--blue">🚸</div>
+            <h3>خروج عن المنطقة الآمنة</h3>
+            <p>
+              سارة كان من المفترض أن تكون في المدرسة، لكن التنبيه وصل الساعة 11:40 بخروجها من نطاق المدرسة.
+              اتصلت الأم فوراً فعرفت أن المدرسة أخلت الطلاب مبكراً ولم تصل الرسالة للجوال.
+              <strong>النتيجة:</strong> تدخّل في دقيقتين بدل قلق ساعات.
+            </p>
+          </article>
+
+          <article class="card card--feature reveal">
+            <div class="card__icon card__icon--amber">🌙</div>
+            <h3>استخدام بعد وقت النوم</h3>
+            <p>
+              تنبيه «وقت الاستخدام» وصل الساعة 1:15 صباحاً بأن الجهاز نشِط، والأهل كانوا يظنون الجميع نائمين.
+              تبيّن أنه محادثة متأخرة من حساب غير معروف.
+              <strong>النتيجة:</strong> حوار هادئ في الصباح وضبط الحدود الزمنية للجهاز.
+            </p>
+          </article>
+
+          <article class="card card--feature reveal">
+            <div class="card__icon card__icon--red">🛑</div>
+            <h3>محاولة تواصل غريبة</h3>
+            <p>
+              تنبيه «الاتصال» رصد رسائل متكررة من رقم مجهول لطفل في العمر المتوسط مع محاولة استدراج لمكالمة.
+              استُخدم الخط الساخن السري في أمانك للإبلاغ.
+              <strong>النتيجة:</strong> حفظ المحادثة كدليل وإبلاغ دون علم الطرف الآخر.
+            </p>
+          </article>
+        </div>
+
+        <p class="text-center note-line">القصص أعلاه سيناريوهات توضيحية مكتوبة لعرض شكل الاستخدام، وليست حوادث موثّقة من مستخدمين حقيقيين.</p>
+      </div>
+    </section>
+
+    <!-- التقارير -->
+    <section class="section" id="reports">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">الإحصائيات والتقارير</span>
+          <h2 class="section__title">صورة واضحة لأسبوع كامل</h2>
+          <p class="section__lead">أرقام تُجمَع تلقائياً حتى لا تحتاج إلى متابعة يومية يدوية.</p>
+        </div>
+
+        <div class="stats">
+          <div class="stat reveal"><strong data-count="7" data-suffix=" أيام">0</strong><span>مدة التقرير الأسبوعي</span></div>
+          <div class="stat reveal"><strong data-count="6" data-suffix=" أنواع">0</strong><span>أنواع التنبيهات المتاحة</span></div>
+          <div class="stat reveal"><strong data-count="5" data-suffix=" ثوانٍ">0</strong><span>متوسط وصول التنبيه</span></div>
+          <div class="stat reveal"><strong data-count="24" data-suffix="/7">0</strong><span>مراقبة مستمرة</span></div>
+        </div>
+        <p class="text-center note-line">المؤشرات أعلاه قيم تصميمية للعرض، وتختلف حسب إعدادات كل حساب.</p>
+      </div>
+    </section>
+
+    <!-- الأسئلة الشائعة -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">الأسئلة الشائعة</span>
+          <h2 class="section__title">أسئلة الأهل عن حماية الطفل</h2>
+        </div>
+
+        <div class="faq reveal">
+          <details>
+            <summary>هل تقرأون رسائل طفلي الخاصة؟</summary>
+            <p>لا. نعرض أنماط النشاط والتنبيهات (مثل تواصل من رقم غير معروف)، لا نصوص المحادثات الخاصة.</p>
+          </details>
+          <details>
+            <summary>هل يعرف طفلي أن الجهاز مرتبط؟</summary>
+            <p>نعم، نؤمن بالشفافية داخل الأسرة، ويظهر التطبيق بوضوح ولا يعمل في الخفاء.</p>
+          </details>
+          <details>
+            <summary>هل التنبيهات كثيرة وتزعجني؟</summary>
+            <p>يمكنك ضبط كل نوع تنبيه على حدة، واختيار الأوقات التي تصلك فيها الإشعارات لكل طفل.</p>
+          </details>
+          <details>
+            <summary>كم طفلاً يمكن متابعتهم في حساب واحد؟</summary>
+            <p>الباقة المميزة تتيح حتى 4 أفراد، والباقة العائلية تتيح عدداً غير محدود.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <div>
+          <h2>ابدأ بحماية طفلك اليوم</h2>
+          <p>تجربة مجانية 14 يوماً، ويمكنك إلغاء الاشتراك في أي وقت.</p>
+        </div>
+        <a href="index.html#contact" class="btn btn--primary btn--lg">ابدأ الحماية الآن</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <a href="index.html" class="brand brand--footer">
+          <img src="images/logo.svg" alt="شعار أمانك" width="40" height="40">
+          <span class="brand__text"><strong>أمانك</strong><small>Safe Guard</small></span>
+        </a>
+        <p class="footer__about">
+          تطبيق متكامل لحماية أفراد العائلة، يجمع بين مراقبة سلامة الأطفال الرقمية،
+          كاميرات مراقبة حية، وخطوط ساخنة سرية للإبلاغ عن الابتزاز.
+        </p>
+        <div class="social">
+          <a href="#" aria-label="تويتر">𝕏</a>
+          <a href="#" aria-label="إنستغرام">📷</a>
+          <a href="#" aria-label="واتساب">💬</a>
+          <a href="#" aria-label="لينكدإن">in</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="app-safety.html">التطبيقات الآمنة</a></li>
+          <li><a href="child-monitor.html">حماية طفلك</a></li>
+          <li><a href="camera.html">كاميرا المراقبة</a></li>
+          <li><a href="index.html#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>في هذه الصفحة</h4>
+        <ul>
+          <li><a href="#alerts">أنواع التنبيهات الستة</a></li>
+          <li><a href="#parent-panel">لوحة الأهل</a></li>
+          <li><a href="#stories">قصص حقيقية</a></li>
+          <li><a href="#reports">الإحصائيات والتقارير</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>معلومات التواصل</h4>
+        <ul class="footer__contact">
+          <li>📞 <a href="tel:+966920001234" dir="ltr">+966 92 000 1234</a></li>
+          <li>✉️ <a href="mailto:info@amanak.sa">info@amanak.sa</a></li>
+          <li>📍 الرياض، المملكة العربية السعودية</li>
+          <li>🕐 الدعم الفني: على مدار الساعة</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© <span id="year">2026</span> أمانك Safe Guard — جميع الحقوق محفوظة.</p>
+        <p>سياسة الخصوصية · الشروط والأحكام</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
